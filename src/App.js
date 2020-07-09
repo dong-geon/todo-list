@@ -9,7 +9,7 @@ const colors = ['#343a40', '#f03e3e', '#12b886', '#228ae6'];
 
 class App extends Component {
 
-    id = 3 // 이미 0,1,2 가 존재하므로 3으로 설정
+    id = 3
 
     state = {
         input: '',
