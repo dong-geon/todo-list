@@ -13,11 +13,7 @@ class App extends Component {
 
     state = {
         input: '',
-        todos: [
-            { id: 0, text: ' 리액트 소개', checked: false },
-            { id: 1, text: 'JSX 사용해보기', checked: true },
-            { id: 2, text: '라이프 사이클 이해하기', checked: false },
-        ],
+        todos: [],
         color: '#343a40'
     }
 
@@ -51,7 +47,7 @@ class App extends Component {
     handleToggle = (id) => {
         const { todos } = this.state;
 
-        // 파라미터로 받은 id 를 가지고 몇번째 아이템인지 찾습니다.
+        // 파라미터로 받은 id 를 가지고 몇번째 아이템인지 찾는다.
         const index = todos.findIndex(todo => todo.id === id);
         const selected = todos[index]; // 선택한 객체
 
